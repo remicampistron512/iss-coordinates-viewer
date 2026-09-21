@@ -17,7 +17,8 @@ longitude = location_data["iss_position"]["longitude"]
 latitude = location_data["iss_position"]["latitude"]
 
 
-print(f'Le {date.strftime("%A %d %B %Y")},l\'ISS se trouve à une Longitude de {longitude} et une Latitude de {latitude}')
+print(f'Le {date.strftime("%A %d %B %Y à %H:%M:%S")}, l\'ISS se trouve à une longitude de {longitude} et une latitude '
+      f'de {latitude}')
 
 
 crew_request = requests.get('http://api.open-notify.org/astros.json')
